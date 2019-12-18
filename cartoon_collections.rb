@@ -1,9 +1,21 @@
-def roll_call_dwarves# code an argument here
-  # Your code here
+def roll_call_dwarves(names)
+  i = 0
+ 
+  while i < names.length
+  names.each_with_index {|name, i| puts "#{i + 1}. #{name}"}
+  i += 1
+  end
 end
 
-def summon_captain_planet# code an argument here
-  # Your code here
+def summon_captain_planet(calls)
+  i = 0
+  collection = []
+  
+  while i < calls.length
+    collection << calls[i].capitalize + "!"
+    i += 1
+  end
+  collection
 end
 
 def long_planeteer_calls# code an argument here
