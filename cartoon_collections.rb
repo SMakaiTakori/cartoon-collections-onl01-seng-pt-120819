@@ -19,6 +19,8 @@ def summon_captain_planet(calls)
 end
 
 def long_planeteer_calls(calls)
+  planeteer_calls.map { |call| call.upcase + "!"}
+  
 #   i = 0
 
 #   if calls.any? {|i| i.length > 4}
